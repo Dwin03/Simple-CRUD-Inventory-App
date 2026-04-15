@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddItem"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/addInventoryLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Add Inventory"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/idLabelLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/addItemIdEditText"
+        app:layout_constraintStart_toStartOf="@+id/addItemIdEditText">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item ID:"
+            android:textSize="15sp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" *"
+            android:textSize="15sp"
+            android:textColor="@color/red" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/addItemIdEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textColor="@color/black"
+        android:background="@drawable/textfield_round_corners"
+        android:paddingHorizontal="5dp"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:hint="Type here . . ."
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/addInventoryLabel"
+        app:layout_constraintStart_toStartOf="@+id/addInventoryLabel"
+        app:layout_constraintTop_toBottomOf="@+id/addInventoryLabel" />
+
+    <LinearLayout
+        android:id="@+id/nameLabelLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/addItemNameEditText"
+        app:layout_constraintStart_toStartOf="@+id/addItemNameEditText">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item Name:"
+            android:textSize="15sp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" *"
+            android:textSize="15sp"
+            android:textColor="@color/red" /> />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/addItemNameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textColor="@color/black"
+        android:background="@drawable/textfield_round_corners"
+        android:paddingHorizontal="5dp"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="Type here . . ."
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/addItemIdEditText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/addItemIdEditText"
+        app:layout_constraintTop_toBottomOf="@+id/addItemIdEditText" />
+
+    <LinearLayout
+        android:id="@+id/quantityLabelLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/addItemQuantityEditText"
+        app:layout_constraintStart_toStartOf="@+id/addItemQuantityEditText">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantity:"
+            android:textSize="15sp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" *"
+            android:textSize="15sp"
+            android:textColor="@color/red" /> />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/addItemQuantityEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textColor="@color/black"
+        android:background="@drawable/textfield_round_corners"
+        android:paddingHorizontal="5dp"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="Type here . . ."
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/addItemNameEditText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/addItemNameEditText"
+        app:layout_constraintTop_toBottomOf="@+id/addItemNameEditText" />
+
+    <LinearLayout
+        android:id="@+id/locationLabelLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/addItemLocationEditText"
+        app:layout_constraintStart_toStartOf="@+id/addItemLocationEditText">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location:"
+            android:textSize="15sp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" *"
+            android:textSize="15sp"
+            android:textColor="@color/red" /> />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/addItemLocationEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textColor="@color/black"
+        android:background="@drawable/textfield_round_corners"
+        android:paddingHorizontal="5dp"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="Type here . . ."
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/addItemQuantityEditText"
+        app:layout_constraintStart_toStartOf="@+id/addItemQuantityEditText"
+        app:layout_constraintTop_toBottomOf="@+id/addItemQuantityEditText" />
+
+    <LinearLayout
+        android:id="@+id/statusLabelLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/addStatusEditText"
+        app:layout_constraintStart_toStartOf="@+id/addStatusEditText">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status:"
+            android:textSize="15sp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" *"
+            android:textSize="15sp"
+            android:textColor="@color/red" /> />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/addStatusEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textColor="@color/black"
+        android:background="@drawable/textfield_round_corners"
+        android:paddingHorizontal="5dp"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="Type here . . ."
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/addItemLocationEditText"
+        app:layout_constraintStart_toStartOf="@+id/addItemLocationEditText"
+        app:layout_constraintTop_toBottomOf="@+id/addItemLocationEditText" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Add Item"
+        android:textColor="@color/dirtyWhite"
+        android:backgroundTint="@color/darkBlue"
+        app:layout_constraintEnd_toEndOf="@+id/addStatusEditText"
+        app:layout_constraintStart_toStartOf="@+id/addStatusEditText"
+        app:layout_constraintTop_toBottomOf="@+id/addStatusEditText" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/homeAsUpIndicator" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

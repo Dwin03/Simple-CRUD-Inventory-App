@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditItem"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/editInventoryLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Update Inventory"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Item ID:"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/editItemIdEditText"
+        app:layout_constraintStart_toStartOf="@+id/editItemIdEditText" />
+
+    <EditText
+        android:id="@+id/editItemIdEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textColor="@color/black"
+        android:background="@drawable/textfield_round_corners"
+        android:paddingHorizontal="5dp"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:hint="Type here . . ."
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/editInventoryLabel"
+        app:layout_constraintStart_toStartOf="@+id/editInventoryLabel"
+        app:layout_constraintTop_toBottomOf="@+id/editInventoryLabel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Item Name:"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/editItemNameEditText"
+        app:layout_constraintStart_toStartOf="@+id/editItemNameEditText" />
+
+    <EditText
+        android:id="@+id/editItemNameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textColor="@color/black"
+        android:background="@drawable/textfield_round_corners"
+        android:paddingHorizontal="5dp"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="Type here . . ."
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/editItemIdEditText"
+        app:layout_constraintStart_toStartOf="@+id/editItemIdEditText"
+        app:layout_constraintTop_toBottomOf="@+id/editItemIdEditText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity:"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/editItemQuantityEditText"
+        app:layout_constraintStart_toStartOf="@+id/editItemQuantityEditText" />
+
+    <EditText
+        android:id="@+id/editItemQuantityEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textColor="@color/black"
+        android:background="@drawable/textfield_round_corners"
+        android:paddingHorizontal="5dp"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="Type here . . ."
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/editItemNameEditText"
+        app:layout_constraintStart_toStartOf="@+id/editItemNameEditText"
+        app:layout_constraintTop_toBottomOf="@+id/editItemNameEditText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location:"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/editItemLocationEditText"
+        app:layout_constraintStart_toStartOf="@+id/editItemLocationEditText" />
+
+    <EditText
+        android:id="@+id/editItemLocationEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textColor="@color/black"
+        android:background="@drawable/textfield_round_corners"
+        android:paddingHorizontal="5dp"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="Type here . . ."
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/editItemQuantityEditText"
+        app:layout_constraintStart_toStartOf="@+id/editItemQuantityEditText"
+        app:layout_constraintTop_toBottomOf="@+id/editItemQuantityEditText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status:"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/editItemStatusEditText"
+        app:layout_constraintStart_toStartOf="@+id/editItemStatusEditText" />
+
+    <EditText
+        android:id="@+id/editItemStatusEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textColor="@color/black"
+        android:background="@drawable/textfield_round_corners"
+        android:paddingHorizontal="5dp"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="Type here . . ."
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/editItemLocationEditText"
+        app:layout_constraintStart_toStartOf="@+id/editItemLocationEditText"
+        app:layout_constraintTop_toBottomOf="@+id/editItemLocationEditText" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Save Changes"
+        android:textColor="@color/dirtyWhite"
+        android:backgroundTint="@color/darkBlue"
+        app:layout_constraintEnd_toEndOf="@+id/editItemStatusEditText"
+        app:layout_constraintStart_toStartOf="@+id/editItemStatusEditText"
+        app:layout_constraintTop_toBottomOf="@+id/editItemStatusEditText" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/homeAsUpIndicator" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
